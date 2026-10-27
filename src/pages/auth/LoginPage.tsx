@@ -32,7 +32,7 @@ export const LoginPage: React.FC = () => {
       setEmail('owner@greenvolt-chennai.in');
       navigate('/owner/dashboard');
     } else {
-      setEmail('admin@chargesmart.gov.in');
+      setEmail('admin@gridguard.gov.in');
       navigate('/admin/dashboard');
     }
   };
@@ -45,7 +45,7 @@ export const LoginPage: React.FC = () => {
           <div className="w-10 h-10 rounded bg-emerald-700 mx-auto flex items-center justify-center text-white mb-3">
             <Zap className="w-6 h-6 fill-white text-white" />
           </div>
-          <h2 className="text-xl font-bold text-slate-900">Sign in to ChargeSmart</h2>
+          <h2 className="text-xl font-bold text-slate-900">Sign in to Grid Guard</h2>
           <p className="text-xs text-slate-500 mt-1">
             Access your reservations, active sessions, and station network
           </p>

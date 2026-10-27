@@ -51,7 +51,7 @@ export const RegisterPage: React.FC = () => {
           <div className="w-10 h-10 rounded bg-emerald-700 mx-auto flex items-center justify-center text-white mb-3">
             <Zap className="w-6 h-6 fill-white text-white" />
           </div>
-          <h2 className="text-xl font-bold text-slate-900">Create your ChargeSmart account</h2>
+          <h2 className="text-xl font-bold text-slate-900">Create your Grid Guard account</h2>
           <p className="text-xs text-slate-500 mt-1">
             Join the Chennai EV charging ecosystem
           </p>

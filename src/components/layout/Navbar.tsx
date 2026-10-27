@@ -122,7 +122,7 @@ export const Navbar: React.FC = () => {
               </div>
               <div>
                 <span className="text-lg font-bold tracking-tight text-slate-900">
-                  Charge<span className="text-emerald-700">Smart</span>
+                  Grid<span className="text-emerald-700">Guard</span>
                 </span>
                 <span className="block text-[10px] text-slate-500 -mt-1 tracking-wide uppercase font-semibold">
                   Chennai
@@ -311,10 +311,10 @@ export const Footer: React.FC = () => {
         <div>
           <div className="flex items-center gap-2 text-slate-900 font-semibold mb-1">
             <Zap className="w-4 h-4 text-emerald-700 fill-emerald-700" />
-            <span>ChargeSmart India — Chennai Pilot</span>
+            <span>Grid Guard India — Chennai Pilot</span>
           </div>
           <p className="text-slate-500">
-            Smart EV Charging Reservation & Station Management Platform.
+            Smart EV Charging Reservation & Grid Management Platform.
           </p>
         </div>
 

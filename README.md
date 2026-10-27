@@ -1,8 +1,8 @@
-# ChargeSmart — EV Charging Reservation & Smart Management Platform
+# Grid Guard — EV Charging Reservation & Smart Grid Management Platform
 
 > **“Charge smarter. Reserve faster. Drive further.”**
 
-ChargeSmart is a web application designed to solve EV charging availability, reservation conflicts, waiting time, station discovery, charger management, and charging decisions for Chennai, Tamil Nadu, India.
+Grid Guard is a web application designed to solve EV charging availability, reservation conflicts, waiting time, station discovery, charger management, and charging decisions for Chennai, Tamil Nadu, India.
 
 ---
 

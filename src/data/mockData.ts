@@ -35,7 +35,7 @@ export const INITIAL_STATIONS: Station[] = [
     estimatedWaitMin: 5,
     powerLevels: ['60 kW DC', '120 kW DC', '22 kW AC'],
     amenities: ['Cafe & Bakery', 'Restrooms', 'Free Wi-Fi', 'EV Lounge', 'Tire Air Station', '24x7 Security CCTV'],
-    paymentMethods: ['UPI (GPay / PhonePe)', 'Credit / Debit Cards', 'Net Banking', 'ChargeSmart Wallet'],
+    paymentMethods: ['UPI (GPay / PhonePe)', 'Credit / Debit Cards', 'Net Banking', 'Grid Guard Wallet'],
     operator: 'GreenVolt Energy India Ltd',
     phone: '+91 44 2621 8900',
     chargers: [
@@ -63,7 +63,7 @@ export const INITIAL_STATIONS: Station[] = [
     estimatedWaitMin: 3,
     powerLevels: ['30 kW DC', '60 kW DC', '22 kW AC'],
     amenities: ['Shopping Arcade', 'Restrooms', 'Beverage Vending', 'Covered Parking'],
-    paymentMethods: ['UPI', 'Credit/Debit Card', 'ChargeSmart Wallet'],
+    paymentMethods: ['UPI', 'Credit/Debit Card', 'Grid Guard Wallet'],
     operator: 'EcoCharge Infrastructure Tamil Nadu',
     phone: '+91 44 2434 1122',
     chargers: [
@@ -149,7 +149,7 @@ export const INITIAL_STATIONS: Station[] = [
     estimatedWaitMin: 6,
     powerLevels: ['120 kW DC', '60 kW DC', '22 kW AC'],
     amenities: ['Tech Park Cafeteria', 'Restrooms', 'Free Wi-Fi', 'EV Lounge', 'EV Service bay'],
-    paymentMethods: ['UPI', 'Credit Cards', 'ChargeSmart Wallet', 'Corporate Fleet Tag'],
+    paymentMethods: ['UPI', 'Credit Cards', 'Grid Guard Wallet', 'Corporate Fleet Tag'],
     operator: 'ChargeGrid Mobility Networks',
     phone: '+91 44 4900 8820',
     chargers: [
@@ -181,7 +181,7 @@ export const INITIAL_STATIONS: Station[] = [
     estimatedWaitMin: 2,
     powerLevels: ['120 kW DC', '60 kW DC', '22 kW AC'],
     amenities: ['Solar Canopy Shelter', 'Convenience Store', 'Coffee Kiosk', 'Restrooms'],
-    paymentMethods: ['UPI', 'Credit/Debit Cards', 'ChargeSmart Wallet'],
+    paymentMethods: ['UPI', 'Credit/Debit Cards', 'Grid Guard Wallet'],
     operator: 'Green Energy Assets Tamil Nadu',
     phone: '+91 44 2450 7711',
     chargers: [
@@ -237,7 +237,7 @@ export const INITIAL_STATIONS: Station[] = [
     estimatedWaitMin: 4,
     powerLevels: ['120 kW DC', '60 kW DC'],
     amenities: ['Metro Rail Connectivity', 'Quick Snacks', 'Restrooms', 'Wi-Fi'],
-    paymentMethods: ['UPI', 'Cards', 'ChargeSmart Wallet'],
+    paymentMethods: ['UPI', 'Cards', 'Grid Guard Wallet'],
     operator: 'PowerHub Infrastructure',
     phone: '+91 44 2232 4455',
     chargers: [
@@ -289,7 +289,7 @@ export const INITIAL_STATIONS: Station[] = [
     estimatedWaitMin: 5,
     powerLevels: ['60 kW DC', '30 kW DC', '22 kW AC'],
     amenities: ['Highway Diner', 'Clean Washrooms', '24x7 Security', 'Truck & Bus Bays'],
-    paymentMethods: ['UPI', 'Credit/Debit Cards', 'ChargeSmart Wallet'],
+    paymentMethods: ['UPI', 'Credit/Debit Cards', 'Grid Guard Wallet'],
     operator: 'ChargePoint Highways',
     phone: '+91 44 2226 8899',
     chargers: [

@@ -155,11 +155,11 @@ export const UserProfilePage: React.FC = () => {
         <div className="bg-white border border-slate-200 rounded-lg p-5 shadow-sm">
           <h2 className="text-sm font-bold text-slate-900 mb-3 flex items-center gap-2">
             <CreditCard className="w-4 h-4 text-emerald-700" />
-            <span>ChargeSmart Wallet & Fastag</span>
+            <span>Grid Guard Wallet & Fastag</span>
           </h2>
           <div className="flex items-center justify-between p-3 bg-slate-50 rounded border border-slate-200 text-xs">
             <div>
-              <span className="font-semibold text-slate-900 block">ChargeSmart Prepaid Balance</span>
+              <span className="font-semibold text-slate-900 block">Grid Guard Prepaid Balance</span>
               <span className="text-slate-500">Auto-debit on unplugging</span>
             </div>
             <div className="text-right">

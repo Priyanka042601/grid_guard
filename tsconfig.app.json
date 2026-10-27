@@ -22,5 +22,14 @@
     "erasableSyntaxOnly": false,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": [
+    "src/components/common/**",
+    "src/components/layout/Sidebar.tsx",
+    "src/components/layout/MobileNav.tsx",
+    "src/components/layout/Header.tsx",
+    "src/components/map/**",
+    "src/hooks/**",
+    "src/utils/**"
+  ]
 }

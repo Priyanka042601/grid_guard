@@ -99,37 +99,37 @@ const AppContext = createContext<AppContextType | undefined>(undefined);
 
 export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [currentUser, setCurrentUser] = useState<User>(() => {
-    const saved = localStorage.getItem('chargesmart_user');
+    const saved = localStorage.getItem('gridguard_user') || localStorage.getItem('chargesmart_user');
     return saved ? JSON.parse(saved) : INITIAL_USER;
   });
 
   const [stations, setStations] = useState<Station[]>(() => {
-    const saved = localStorage.getItem('chargesmart_stations');
+    const saved = localStorage.getItem('gridguard_stations') || localStorage.getItem('chargesmart_stations');
     return saved ? JSON.parse(saved) : INITIAL_STATIONS;
   });
 
   const [reservations, setReservations] = useState<Reservation[]>(() => {
-    const saved = localStorage.getItem('chargesmart_reservations');
+    const saved = localStorage.getItem('gridguard_reservations') || localStorage.getItem('chargesmart_reservations');
     return saved ? JSON.parse(saved) : [INITIAL_ACTIVE_RESERVATION];
   });
 
   const [activeSession, setActiveSession] = useState<ActiveChargingSession | null>(() => {
-    const saved = localStorage.getItem('chargesmart_active_session');
+    const saved = localStorage.getItem('gridguard_active_session') || localStorage.getItem('chargesmart_active_session');
     return saved ? JSON.parse(saved) : null;
   });
 
   const [history, setHistory] = useState<ChargingHistoryRecord[]>(() => {
-    const saved = localStorage.getItem('chargesmart_history');
+    const saved = localStorage.getItem('gridguard_history') || localStorage.getItem('chargesmart_history');
     return saved ? JSON.parse(saved) : INITIAL_CHARGING_HISTORY;
   });
 
   const [queue, setQueue] = useState<QueueEntry[]>(() => {
-    const saved = localStorage.getItem('chargesmart_queue');
+    const saved = localStorage.getItem('gridguard_queue') || localStorage.getItem('chargesmart_queue');
     return saved ? JSON.parse(saved) : INITIAL_QUEUE;
   });
 
   const [conflicts, setConflicts] = useState<ConflictIncident[]>(() => {
-    const saved = localStorage.getItem('chargesmart_conflicts');
+    const saved = localStorage.getItem('gridguard_conflicts') || localStorage.getItem('chargesmart_conflicts');
     return saved ? JSON.parse(saved) : INITIAL_CONFLICTS;
   });
 
@@ -170,31 +170,31 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
 
   // Persistence effects
   useEffect(() => {
-    localStorage.setItem('chargesmart_user', JSON.stringify(currentUser));
+    localStorage.setItem('gridguard_user', JSON.stringify(currentUser));
   }, [currentUser]);
 
   useEffect(() => {
-    localStorage.setItem('chargesmart_stations', JSON.stringify(stations));
+    localStorage.setItem('gridguard_stations', JSON.stringify(stations));
   }, [stations]);
 
   useEffect(() => {
-    localStorage.setItem('chargesmart_reservations', JSON.stringify(reservations));
+    localStorage.setItem('gridguard_reservations', JSON.stringify(reservations));
   }, [reservations]);
 
   useEffect(() => {
-    localStorage.setItem('chargesmart_active_session', JSON.stringify(activeSession));
+    localStorage.setItem('gridguard_active_session', JSON.stringify(activeSession));
   }, [activeSession]);
 
   useEffect(() => {
-    localStorage.setItem('chargesmart_history', JSON.stringify(history));
+    localStorage.setItem('gridguard_history', JSON.stringify(history));
   }, [history]);
 
   useEffect(() => {
-    localStorage.setItem('chargesmart_queue', JSON.stringify(queue));
+    localStorage.setItem('gridguard_queue', JSON.stringify(queue));
   }, [queue]);
 
   useEffect(() => {
-    localStorage.setItem('chargesmart_conflicts', JSON.stringify(conflicts));
+    localStorage.setItem('gridguard_conflicts', JSON.stringify(conflicts));
   }, [conflicts]);
 
   // Live active charging session simulation tick
@@ -285,7 +285,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       phone = '+91 98410 77889';
     } else if (role === 'admin') {
       name = 'Meenakshi Sundaram';
-      email = 'admin@chargesmart.gov.in';
+      email = 'admin@gridguard.gov.in';
       phone = '+91 94440 11223';
     }
 
@@ -297,7 +297,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       role,
     }));
 
-    addNotification('Switched Workspace Role', `Now viewing ChargeSmart as ${role.toUpperCase().replace('_', ' ')}`, 'info');
+    addNotification('Switched Workspace Role', `Now viewing Grid Guard as ${role.toUpperCase().replace('_', ' ')}`, 'info');
   };
 
   const getStationById = (id: string) => {

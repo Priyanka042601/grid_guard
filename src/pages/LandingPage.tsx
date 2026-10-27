@@ -132,7 +132,7 @@ export const LandingPage: React.FC = () => {
       <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-b border-slate-200">
         <div className="text-left mb-10">
           <span className="text-xs uppercase font-semibold text-emerald-800 tracking-wider">Process Flow</span>
-          <h2 className="text-2xl font-bold text-slate-900 mt-1">How ChargeSmart Works</h2>
+          <h2 className="text-2xl font-bold text-slate-900 mt-1">How Grid Guard Works</h2>
           <p className="text-sm text-slate-600 mt-1">From discovery to departure without friction or queues.</p>
         </div>
 
@@ -258,7 +258,7 @@ export const LandingPage: React.FC = () => {
       <section className="py-12 bg-slate-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <h3 className="text-xl font-bold tracking-tight">Ready to test the ChargeSmart platform?</h3>
+            <h3 className="text-xl font-bold tracking-tight">Ready to test the Grid Guard platform?</h3>
             <p className="text-xs text-slate-400 mt-1">
               Switch seamlessly between EV Driver, Station Owner, and Platform Admin experiences.
             </p>
